@@ -1,0 +1,16 @@
+- name: create users
+  hosts: 
+   - local
+  tasks: 
+    - name: create jawza user
+      user:
+        name: jawza
+        state: present
+    - name: create jem user
+      user:
+        name: jem
+        state: present
+    - name: create jemini user
+      user:
+        name: jemini
+        state: present
